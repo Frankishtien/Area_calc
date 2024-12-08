@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Area Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8HIV4bQpZl2pHcbY2PihQv1z2QhfbY2R4/6s" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Shape Area Calculator</h2>
+    
+    <label for="sides">Select the number of sides:</label>
+    <select id="sides" onchange="updateForm()">
+        <option value="0">0 - Circle</option>
+        <option value="3">3 - Triangle</option>
+        <option value="4">4 - Quadrilateral</option>
+        <option value="5">5 - Pentagon</option>
+        <option value="6">6 - Hexagon</option>
+    </select>
+
+    <div id="input-fields"></div>
+
+    <button onclick="calculateArea()">Calculate Area</button>
+    
+    <h3>Result: <span id="result"></span></h3>
+</div>
+
+
+<!-- Icon container for displaying shapes -->
+<div id="icon-container" class="icon-container">
+    <i id="triangleIcon" class="fa-solid fa-triangle shapeIcon"></i>
+    <i id="squareIcon" class="fa-solid fa-square shapeIcon"></i>
+    <i id="rectangleIcon" class="fa-solid fa-rectangle-wide shapeIcon"></i>
+    <i id="circleIcon" class="fa-solid fa-circle shapeIcon"></i>
+    <i id="pentagonIcon" class="fa-brands fa-react shapeIcon"></i>
+    <i id="hexagonIcon" class="fa-solid fa-hexagon shapeIcon"></i>
+    <i id="rhombusIcon" class="fa-solid fa-diamond shapeIcon"></i>
+</div>
+
+<script>
+
+</script>
+<script src="./script.js"></script>
+</body>
+</html>
+<!-- /////////////////////////////////////////////////////////////////////// -->
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////// -->
